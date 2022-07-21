@@ -1,0 +1,399 @@
+*, html {
+    scroll-behavior:smooth ;
+}
+
+body {
+    background-color:rgb(250, 219, 216);
+    color: rgb(2, 15, 81);
+}
+
+hr {
+    border-color: rgb(2, 15, 81);
+    height: 0;
+}
+
+.navbar {
+    list-style-type: none;
+    text-align: right;
+    margin-right: 7em;
+    margin-bottom: 40px;
+    
+}
+
+.nav-item {
+    display: inline;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.nav-link {
+    text-decoration: none;
+    border-bottom: solid 2px black;
+    padding-bottom: 2px;
+    font-family: Helvetica;
+    color: black;
+}
+
+.nav-link:hover {
+    border-bottom: solid 3px black;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.table {
+    margin: auto;
+    height: 40em;
+    width: 100%;
+    table-layout: fixed;
+}
+/*
+.column {
+     border: solid 2px black; 
+}
+*/
+.column img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+.img-move {
+    position: relative;
+    transform: translateX(100%);
+}
+
+.text-move {
+    position: relative;
+    transform: translateX(-100%);
+}
+
+.column h2 {
+    font-size: 50px;
+}
+.column p {
+    font-family: helvetica;
+    font-weight: lighter;
+
+}
+
+.column hr {
+    width: 40%;
+}
+
+.textt{
+    text-align: center;
+}
+
+
+.social_box ul{
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    justify-items:center;
+    padding: auto;
+    margin-top: 50px;
+    padding: 0 0 0 0;
+}
+
+.social_box ul li{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    text-align: center;
+    justify-items:center;
+}
+.social_box ul i{
+    font-size: 30px;
+}
+
+#aboutme, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#aboutme h1{
+    text-align: center;
+    
+}
+
+.box-timeline {
+    width: 100%;
+    height: 1500px;
+    position: relative;
+    padding: 80px 0 0 0;
+}
+
+.ligne-timeline{
+    height: 1000px;
+    width: 3px;
+    margin: 0 auto;
+    background: rgb(2, 15, 81);
+}
+
+.rond {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(2, 15, 81);
+    position: absolute;
+    border: 1px solid rgb(2, 15, 81);
+    left:50%;  /* centre le rond */
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* 1000-160 (diamètre 2rond) +80 (box padding) /3 = 306*/
+.r1{top:80px;}
+.r2{top:386px;}
+.r3{top:692px;}
+.r4{top:1000px;}
+
+.box {
+    color:#000;
+    width: 400px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    height: auto;
+    background: rgb(250, 219, 216);
+    box-shadow: 0 10px 15px rgba(2, 15, 81, 0.3);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.b1 {
+    top: 80px;
+    left:calc(50% - 270px);
+}
+
+.b2 {
+    top: 386px;
+    left:calc(50% + 270px);
+}
+
+.b3 {
+    top: 692px;
+    left:calc(50% - 270px);
+}
+
+.b4 {
+    top: 1000px;
+    left:calc(50% + 270px);
+}
+
+.box p {
+    line-height: 20px;
+    font-size: 15px;
+    margin: 10px 0 20px 0;
+    
+}
+
+.btn{
+    display: block;
+    padding: 10px;
+    width:120px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1000px){
+    .ligne-timeline {
+        position: relative;
+        left: 200px;
+    }
+    .rond{
+        left: calc(50% + 200px);
+    }
+    .box {
+        left: calc(50% - 50px);
+    }
+}
+
+#myproject{
+    margin-block: 40px;
+}
+
+#myproject h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 200px;
+}
+
+#aboutme h2{
+    font-size: 30px;
+}
+
+.images-container {
+    display: grid;
+    max-width: 800px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    position: relative;
+}
+.images-container img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.images-container .img-box:hover img{
+    transform: scale(1.3);
+}
+
+.images-container .img-box{
+    object-fit:cover;
+    width: 385px;
+    height: 385px;
+    overflow: hidden;
+    position: relative;
+    transition: opacity 0.2s ease-in-out;
+
+}
+
+.images-container .img-box:hover img{
+    content: '';
+    position: absolute;
+    filter: brightness(0.3);
+    mix-blend-mode: multiply;
+    transition: 0.5s;
+}
+
+.images-container .img-box img{
+    position: absolute;
+}
+
+
+
+.images-container .img-box:hover .content{
+    position: absolute;
+    bottom: 0;
+    padding: 40px;
+    color: white;
+}
+
+.images-container .img-box:hover .content h2{
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+
+.images-container .img-box .content h2{
+    transform: translateY(500px);
+}
+
+.images-container .img-box:hover .content p{
+    transform: translateY(0px);
+    transition: 0.6s;
+}
+
+.images-container .img-box .content p{
+    transform: translateY(500px);
+    font-size: 15px;
+}
+
+#contact .contains{
+    padding: 0 370px;
+    margin: 40px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#contact h1{
+    margin: 0 0;
+    margin-bottom: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-block: 50px;
+}
+
+.inputs .inputs-rw{
+    display:flex ;
+    justify-content: space-between;
+}
+
+#contact .contains .inputs .mess{
+    height: 100px;
+    padding: 0 0 0 0;
+    border-radius: 4px;
+    background-color:white;
+    border: solid 2px #ccc;
+}
+
+#contact .contains .mess1{
+    width: 30%;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: solid 2px #ccc;
+}
+
+#contact .contains .inputs input:focus{
+    border: solid 2px black;
+}
+
+.footer .navbar{
+    text-align: center;
+    margin: 30px 0;
+    padding: 0 0 0 0;
+}
+
+.footer hr{
+    width: 20%;
+}
+
+.footer p{
+    text-align: center;
+}
+
+h1{
+    font-size: 70px;
+    font-family: PPFormula;
+    src: local("PP Formula"),
+    url(PPFormula-CondensedExtralight.otf);
+    font-weight: 100;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+font-weight: 100;
+}
+
+h2{
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;;
+    font-weight: 100;
+}
+
+::placeholder{
+    color: rgba(2, 15, 81, 0.5);
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight:lighter;
+}
+

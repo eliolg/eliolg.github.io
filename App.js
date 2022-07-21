@@ -1,0 +1,65 @@
+//Photo big
+$(document).ready(function(){
+      $(".img-move").animate({left: '-100%'}, 500);
+  });
+
+  $(document).ready(function(){
+    $(".text-move").animate({left: '100%'}, 500);
+});
+
+
+//Timeline
+
+const allRonds = document.querySelectorAll('.rond');
+const allBoxes = document.querySelectorAll('.box');
+
+const controller = new ScrollMagic.Controller();
+
+allBoxes.forEach(box => {
+    
+    for (i = 0; i < allRonds.length; i++) {
+
+        if(allRonds[i].getAttribute('data-anim') === box.getAttribute('data-anim')){
+
+            let tween = gsap.from(box, {y:-100, opacity:0, duration:0.5});
+
+            let scene = new ScrollMagic.Scene({
+                triggerElement: allRonds[i],
+                reverse: false
+            })
+            .setTween(tween)
+            .addIndicators()
+            .addTo(controller)
+        }
+    }
+});
+
+
+//Intersection Observer
+
+const images = document.querySelectorAll
+('.images-container img')
+
+
+let options = {
+    //root:null
+    rootMargin: "-20% 0px", // On declenche l'anim 100px plus tard que le trigger
+    threshold: 0,
+}
+
+function handleIntersect(entries){
+    console.log(entries);
+
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.style.opacity = 1;
+        }
+    })
+}
+
+const observer = new IntersectionObserver
+(handleIntersect, options)
+
+images.forEach(image => {
+    observer.observe(image)
+})
