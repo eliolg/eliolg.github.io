@@ -12,6 +12,8 @@ hr {
     height: 0;
 }
 
+
+
 .navbar {
     list-style-type: none;
     text-align: right;
@@ -38,6 +40,23 @@ hr {
     border-bottom: solid 3px black;
 }
 
+@media screen and (max-width:1000px){
+    #toptop .navbar{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+        padding: 0;
+        width: auto;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .nav-item{
+        margin-top: 20px;
+    }
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -58,6 +77,13 @@ a {
     width: 100%;
     height: auto;
     position: relative;
+}
+
+@media (max-width:500px){
+    .column,
+    .ligne {
+        display: block;
+    }
 }
 
 
@@ -222,6 +248,9 @@ a {
     }
     .box {
         left: calc(50% - 50px);
+        width: 70%;
+        height: 60px;
+        overflow: scroll;
     }
 }
 
@@ -257,6 +286,22 @@ a {
     margin-left: 100px;
 }
 
+@media (max-width:500px){
+.table-comp{
+    display: flex;
+
+}
+#mycompetences tr{
+    display: flex;
+    flex-direction: column;
+}
+#mycompetences th{
+    margin-top: 100px;
+
+    
+}
+
+}
 
 
 
@@ -300,7 +345,7 @@ a {
     align-items: center;
     text-align: center;
     margin-bottom: 60px;
-    margin-top: 200px;
+    margin-top: 60px;
 }
 
 #aboutme h2{
@@ -315,6 +360,14 @@ a {
     grid-gap: 30px;
     position: relative;
 }
+
+@media screen and (max-width:1000px){
+    .images-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .images-container img{
     width: 100%;
     height: 100%;
@@ -422,6 +475,14 @@ a {
     border: solid 2px black;
 }
 
+@media screen and (max-width:1000px){
+#contact .contains{
+    margin: 0;
+    padding: 0;
+}
+
+}
+
 .footer .navbar{
     text-align: center;
     margin: 30px 0;
@@ -437,7 +498,7 @@ a {
 }
 
 h1{
-    font-size: 70px;
+    font-size: 5rem;
     font-family: PPFormula;
     src: local("PP Formula"),
     url(PPFormula-CondensedExtralight.otf);
@@ -453,7 +514,7 @@ font-weight: 100;
 }
 
 h2{
-    font-size: 50px;
+    font-size: 2em;
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Rubik', sans-serif;;
@@ -468,3 +529,8 @@ h2{
     font-weight:lighter;
 }
 
+@media screen and (max-width:1000px){
+    h1{
+        font-size: 3em;
+    }
+}
