@@ -63,3 +63,32 @@ const observer = new IntersectionObserver
 images.forEach(image => {
     observer.observe(image)
 })
+
+//competences
+function barIntersect(entries){
+    console.log(entries);
+
+    entries.forEach(entry =>{
+        if(entry.isIntersecting & entry.target.className == "bar1"){
+            entry.target.classList.add('htmll');
+        }
+        if(entry.isIntersecting & entry.target.className == "bar2"){
+            entry.target.classList.add('css');
+        }
+        if(entry.isIntersecting & entry.target.className == "bar3"){
+            entry.target.classList.add('js');
+        }
+        if(entry.isIntersecting & entry.target.className == "bar4"){
+            entry.target.classList.add('php');
+        }
+    });
+}
+
+const observer2 = new IntersectionObserver(barIntersect)
+
+const bars = document.querySelectorAll('#bar')
+
+
+bars.forEach(bar => {
+    observer2.observe(bar)
+})

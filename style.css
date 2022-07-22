@@ -225,6 +225,72 @@ a {
     }
 }
 
+#mycompetences h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 200px;
+}
+
+#mycompetences .tab-comp {
+    margin: auto;
+    height: 40em;
+    width: 60%;
+    table-layout: fixed;
+}
+
+#mycompetences .text {
+    color: rgb(2, 15, 81);;
+    float: left;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+
+#mycompetences #bar {
+    background-color: rgb(2, 15, 81);
+    box-shadow: 0 0 5px black;
+    width: 100%;
+    border-radius: 3px;
+    height: 15px;
+    margin-left: 100px;
+}
+
+
+
+
+.htmll{
+    animation: htmlSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
+}
+.css{
+    animation: cssSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
+}
+.js{
+    animation: jsSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
+}
+.php{
+    animation: phpSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
+}
+
+
+@keyframes htmlSlide{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+@keyframes cssSlide{
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+@keyframes jsSlide{
+    0%{width: 0%;}
+    100%{width: 30%;}
+}
+@keyframes phpSlide{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
 #myproject{
     margin-block: 40px;
 }
