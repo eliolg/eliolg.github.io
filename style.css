@@ -282,6 +282,9 @@ a {
     font-size: 17px;
 }
 
+#mycompetences .niv{
+    font-size: 13px;
+}
 
 #mycompetences #bar {
     background-color: rgb(2, 15, 81);
@@ -333,7 +336,7 @@ a {
 
 @keyframes hSlide{
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 50%;}
 }
 @keyframes pSlide{
     0%{width: 0%;}
@@ -341,11 +344,11 @@ a {
 }
 @keyframes lSlide{
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 50%;}
 }
 @keyframes mSlide{
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 50%;}
 }
 
 @keyframes aSlide{
@@ -354,7 +357,7 @@ a {
 }
 @keyframes cSlide{
     0%{width: 0%;}
-    100%{width: 30%;}
+    100%{width: 40%;}
 }
 
 #myproject{

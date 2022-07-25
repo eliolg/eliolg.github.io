@@ -68,22 +68,22 @@ function barIntersect(entries){
     console.log(entries);
 
     entries.forEach(entry =>{
-        if(entry.isIntersecting & entry.target.className == "bar1"){
+        if(entry.isIntersecting & entry.target.className == "bar3"){
             entry.target.classList.add('htmlCSS');
         }
-        if(entry.isIntersecting & entry.target.className == "bar2"){
+        if(entry.isIntersecting & entry.target.className == "bar5"){
             entry.target.classList.add('PythonJava');
         }
-        if(entry.isIntersecting & entry.target.className == "bar3"){
+        if(entry.isIntersecting & entry.target.className == "bar4"){
             entry.target.classList.add('Langues');
         }
-        if(entry.isIntersecting & entry.target.className == "bar4"){
+        if(entry.isIntersecting & entry.target.className == "bar2"){
             entry.target.classList.add('Mecatronique');
         }
-        if(entry.isIntersecting & entry.target.className == "bar5"){
+        if(entry.isIntersecting & entry.target.className == "bar6"){
             entry.target.classList.add('Animation');
         }
-        if(entry.isIntersecting & entry.target.className == "bar6"){
+        if(entry.isIntersecting & entry.target.className == "bar1"){
             entry.target.classList.add('CATIAV5');
         }
     });
