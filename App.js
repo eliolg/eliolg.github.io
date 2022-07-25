@@ -70,16 +70,22 @@ function barIntersect(entries){
 
     entries.forEach(entry =>{
         if(entry.isIntersecting & entry.target.className == "bar1"){
-            entry.target.classList.add('htmll');
+            entry.target.classList.add('htmlCSS');
         }
         if(entry.isIntersecting & entry.target.className == "bar2"){
-            entry.target.classList.add('css');
+            entry.target.classList.add('PythonJava');
         }
         if(entry.isIntersecting & entry.target.className == "bar3"){
-            entry.target.classList.add('js');
+            entry.target.classList.add('Langues');
         }
         if(entry.isIntersecting & entry.target.className == "bar4"){
-            entry.target.classList.add('php');
+            entry.target.classList.add('Mecatronique');
+        }
+        if(entry.isIntersecting & entry.target.className == "bar5"){
+            entry.target.classList.add('Animation');
+        }
+        if(entry.isIntersecting & entry.target.className == "bar6"){
+            entry.target.classList.add('CATIAV5');
         }
     });
 }

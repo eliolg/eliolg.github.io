@@ -92,6 +92,10 @@ a {
     transform: translateX(100%);
 }
 
+#tab-top .text-para{
+    padding-inline: 30px;
+}
+
 .text-move {
     position: relative;
     transform: translateX(-100%);
@@ -264,15 +268,17 @@ a {
 
 #mycompetences .tab-comp {
     margin: auto;
-    height: 40em;
+    height: 20em;
     width: 60%;
     table-layout: fixed;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 #mycompetences .text {
     color: rgb(2, 15, 81);;
     float: left;
-    margin-left: 20px;
+    margin-left: 30px;
     font-size: 17px;
 }
 
@@ -283,7 +289,7 @@ a {
     width: 100%;
     border-radius: 3px;
     height: 15px;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 @media (max-width:500px){
@@ -305,35 +311,50 @@ a {
 
 
 
-.htmll{
-    animation: htmlSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
+.htmlCSS{
+    animation: hSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
 }
-.css{
-    animation: cssSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
+.PythonJava{
+    animation: pSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
 }
-.js{
-    animation: jsSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
+.Langues{
+    animation: lSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
 }
-.php{
-    animation: phpSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
+.Mecatronique{
+    animation: mSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
+}
+.Animation{
+    animation: aSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
+}
+.CATIAV5{
+    animation: cSlide 1.5s cubic-bezier(0.33,1,0.68,1) forwards;
 }
 
 
-@keyframes htmlSlide{
-    0%{width: 0%;}
-    100%{width: 50%;}
-}
-@keyframes cssSlide{
+@keyframes hSlide{
     0%{width: 0%;}
     100%{width: 40%;}
 }
-@keyframes jsSlide{
+@keyframes pSlide{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+@keyframes lSlide{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+@keyframes mSlide{
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+
+@keyframes aSlide{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+@keyframes cSlide{
     0%{width: 0%;}
     100%{width: 30%;}
-}
-@keyframes phpSlide{
-    0%{width: 0%;}
-    100%{width: 70%;}
 }
 
 #myproject{
