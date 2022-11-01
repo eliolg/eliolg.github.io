@@ -1,16 +1,17 @@
 *, html {
     scroll-behavior:smooth ;
+    font-family: Rubik;
+    
 }
 
 body {
     background-color:rgb(250, 219, 216);
     color: rgb(2, 15, 81);
+    margin: 0;
 }
 
 hr {
-    border-color: rgb(2, 15, 81);
-    height: 0rem;
-    background-color: rgb(2, 15, 81);
+    border-top: 2px solid rgb(2, 15, 81);
 }
 
 
@@ -18,8 +19,9 @@ hr {
 .navbar {
     list-style-type: none;
     text-align: right;
-    margin-right: 7em;
     margin-bottom: 40px;
+    padding-left: 0;
+    margin-inline: 2em;
     
 }
 
@@ -33,7 +35,6 @@ hr {
     text-decoration: none;
     border-bottom: solid 2px black;
     padding-bottom: 2px;
-    font-family: Helvetica;
     color: black;
 }
 
@@ -66,7 +67,7 @@ a {
 .table {
     margin: auto;
     height: 40em;
-    width: 100%;
+    width:100%;
     table-layout: fixed;
 }
 /*
@@ -106,7 +107,6 @@ a {
     font-size: 50px;
 }
 .column p {
-    font-family: helvetica;
     font-weight: lighter;
 
 }
@@ -276,16 +276,25 @@ a {
     margin-bottom: 150px;
 }
 
+#mycompetences .lign{
+    border: solid 1px;
+    height: 30px;
+}
+
 #mycompetences .text {
     color: rgb(2, 15, 81);;
     float: left;
+    margin: auto;
     margin-left: 30px;
     font-size: 17px;
+
 }
 
 #mycompetences .niv{
     font-size: 13px;
 }
+
+
 
 #mycompetences #bar {
     background-color: rgb(2, 15, 81);
@@ -531,26 +540,17 @@ h1{
 }
 
 p{
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Rubik', sans-serif;
     font-size: 20px;
-font-weight: 100;
+    font-weight: 100;
 }
 
 h2{
     font-size: 2em;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Rubik', sans-serif;;
     font-weight: 100;
 }
 
 ::placeholder{
     color: rgba(2, 15, 81, 0.5);
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Rubik', sans-serif;
     font-weight:lighter;
 }
 
